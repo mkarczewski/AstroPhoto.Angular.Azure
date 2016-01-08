@@ -1,0 +1,32 @@
+{
+  "siteName": {
+    "value": "astrophoto"
+  },
+  "hostingPlanName": {
+    "value": "astrophoto-plan"
+  },
+  "siteLocation": {
+    "value": "North Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "serverName": {
+    "value": "astrophoto-server"
+  },
+  "serverLocation": {
+    "value": "North Europe"
+  },
+  "administratorLogin": {
+    "value": "astrophoto-dbuser"
+  },
+  "administratorLoginPassword": {
+    "value": "Qwerty.1"
+  },
+  "databaseName": {
+    "value": "astrophoto_db"
+  }
+}

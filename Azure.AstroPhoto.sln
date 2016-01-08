@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AP.FrontEnd", "AP.FrontEnd\AP.FrontEnd.csproj", "{B7CE35A3-1836-4B88-9F12-A324A8C1B5E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{3968052D-26F2-47FA-9D14-EED6F26BEAA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{48D10671-2361-419E-8368-228222999214}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{4134992C-DA83-4999-8676-8E8ABA6862C4}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\APFrontEnd.json = PublishScripts\Templates\APFrontEnd.json
+		PublishScripts\Templates\APFrontEnd.param.dev.json = PublishScripts\Templates\APFrontEnd.param.dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AP.PhotosCropper", "AP.PhotosCropper\AP.PhotosCropper.csproj", "{346B137B-0983-449D-8216-8F1B5543F81C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AP.DB", "AP.DB\AP.DB.csproj", "{55BBB9E8-E9EC-4014-85E6-AED2A938AEBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7CE35A3-1836-4B88-9F12-A324A8C1B5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7CE35A3-1836-4B88-9F12-A324A8C1B5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7CE35A3-1836-4B88-9F12-A324A8C1B5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7CE35A3-1836-4B88-9F12-A324A8C1B5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346B137B-0983-449D-8216-8F1B5543F81C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346B137B-0983-449D-8216-8F1B5543F81C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346B137B-0983-449D-8216-8F1B5543F81C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346B137B-0983-449D-8216-8F1B5543F81C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55BBB9E8-E9EC-4014-85E6-AED2A938AEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55BBB9E8-E9EC-4014-85E6-AED2A938AEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55BBB9E8-E9EC-4014-85E6-AED2A938AEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55BBB9E8-E9EC-4014-85E6-AED2A938AEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{48D10671-2361-419E-8368-228222999214} = {3968052D-26F2-47FA-9D14-EED6F26BEAA2}
+		{4134992C-DA83-4999-8676-8E8ABA6862C4} = {3968052D-26F2-47FA-9D14-EED6F26BEAA2}
+	EndGlobalSection
+EndGlobal

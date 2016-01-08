@@ -1,0 +1,24 @@
+﻿<img width="400px" ng-src="{{photoUrl}}" ng-mousedown="mouseDown($event)" ng-mouseup="objectClick($event)" />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>No</th>
+            <th>Position X</th>
+            <th>Position Y</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in items">
+            <td><button class="btn btn-danger" ng-click="removeItem(item.no)">Remove</button></td>
+            <td>{{item.no}}</td>
+            <td>{{item.x}}</td>
+            <td>{{item.y}}</td>
+            <td><input ng-model="item.name" /></td>
+        </tr>
+    </tbody>
+</table>
+
+<button class="btn btn-success" ng-click="submit()">Submit</button>

@@ -1,0 +1,37 @@
+﻿
+<button class="btn btn-primary" ng-click="addNewPhoto()">Add new photo</button>
+<br />
+<br />
+
+<form>
+    <div class="form-group">
+        <label>Filter</label>
+        <input class="form-control" type="text" ng-model="filter" ng-change="refresh()" />
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Object name</th>
+            <th>Cropped photo</th>
+            <th>Full photo</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr ng-repeat="item in items" ng-animate="">
+            <td>{{item.Name}}</td>
+            <td>
+                <a ng-href="{{item.CroppedPhotoUrl}}" target="_blank">
+                    <img ng-src="{{item.CroppedPhotoUrl}}" width="50px" />
+                </a>
+            </td>
+            <td>
+                <a ng-href="{{item.BigPhotoUrl}}" tar target="_blank">
+                    <img ng-src="{{item.BigPhotoUrl}}" width="50px" />
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>

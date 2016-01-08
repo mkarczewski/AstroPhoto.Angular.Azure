@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+    <script type="text/javascript" src="@Url.Content("~/AppScripts/utils.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/AppScripts/addPhotoApp.js")"></script>
+}
+
+<h2>Astro photos</h2>
+
+<div ng-app="addPhotoApp">
+
+
+    <div ng-view>
+    </div>
+
+
+</div>
+
